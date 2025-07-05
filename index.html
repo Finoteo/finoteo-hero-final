@@ -69,7 +69,7 @@
   <div id="intro"></div>
 
   <!-- Efekt dźwiękowy otwierania sejfu -->
-  <audio id="vault-sound" src="vault-opening.mp3" preload="auto"></audio>
+
 
   <!-- Zawartość strony po otwarciu sejfu -->
   <div id="main-content" class="center">
@@ -79,9 +79,7 @@
 
   <script>
     window.addEventListener('load', () => {
-      const sound = document.getElementById('vault-sound');
-      sound.volume = 0.8;
-      sound.play();
+      // intro start bez dźwięku
 
       setTimeout(() => {
         document.getElementById('main-content').classList.add('show');
